@@ -1,0 +1,8 @@
+
+o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ε»Ί†
+t
+java:S2786"RRemove this redundant "static" qualifier; nested enum types are implicitly static.(Ίπϋτώÿÿÿÿ8–ΠΪΓ1
+7
+java:S2112$"Use the URI class instead.(φέΆσ8ψ€ΪΓ1
+`
+java:S1155%">Use isEmpty() to check whether the collection is empty or not.(μ°­ςόÿÿÿÿ8ϊ€ΪΓ1
