@@ -11,21 +11,17 @@ springdoc:
       tokenUrl: "http://localhost:8080/realms/schenectady/protocol/openid-connect/token"
       authorizationUrl: "http://localhost:8080/realms/schenectady/protocol/openid-connect/auth"
 
-scheme: http
-origins: ${scheme}://localhost:4200
-keycloak-port: 8080
-
 com.c4-soft.springaddons.oidc:
   ops:
-    - iss: ${scheme}://localhost:${keycloak-port}
+    - iss: http://localhost:8080
       username-claim: preferred_username
       authorities:
         - path: $.realm_access.roles
         - path: $.resource_access.*.roles
-  resourceserver:
+  resource-server:
     permit-all:
       - "/v3/api-docs/**"
       - "/swagger-ui/**"
     cors:
       - path: /**
-        allowed-origin-patterns: ${origins}
+        allowed-origin-patterns: http://localhost:4200
