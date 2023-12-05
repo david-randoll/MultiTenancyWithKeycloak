@@ -1,4 +1,4 @@
-package com.springaddon.SpringAddon;
+package com.springaddon.SpringAddon.controller;
 
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.context.SecurityContextHolder;
