@@ -18,7 +18,7 @@ import java.util.Collection;
 import java.util.Map;
 
 @Configuration
-@EnableMethodSecurity
+@EnableMethodSecurity(securedEnabled = true, prePostEnabled = true, jsr250Enabled = true)
 public class SecurityConfig {
     @Bean
     JwtAbstractAuthenticationTokenConverter authenticationConverter(
